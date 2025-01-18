@@ -1,0 +1,10 @@
+# Ignore API keys and sensitive files
+config.py
+
+# Ignore thumbnails and data outputs
+data/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
