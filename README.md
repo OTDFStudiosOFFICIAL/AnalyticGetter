@@ -11,25 +11,13 @@ AnalyticGetter is a tool for fetching YouTube channel analytics, that includes v
 ## Setup
 1. Clone this repository:
 git clone https://github.com/yourusername/AnalyticGetter.git
-
-markdown
-Copy
-Edit
 2. Install dependencies:
 pip install -r requirements.txt
-
-markdown
-Copy
-Edit
 3. Set up your YouTube Data API key in `config.py`.
 
 ## Usage
 Run the script:
 python main.py
-
-markdown
-Copy
-Edit
 
 ## Outputs
 - CSV file: `data/video_data.csv`
