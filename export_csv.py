@@ -1,6 +1,7 @@
-import pandas as pd
+import csv
 
-def save_to_csv(video_data, output_file):
-    df = pd.DataFrame(video_data)
-    df.to_csv(output_file, index=False)
-    print(f"Data saved to {output_file}")
+def save_to_csv(video_data, filename='data/video_data.csv'):
+    with open(filename, mode='w', newline='', encoding='utf-8') as file:
+        writer = csv.DictWriter(file, fieldnames=video_data[0].keys())
+        writer.writeheader()
+        writer.writerows(video_data)
